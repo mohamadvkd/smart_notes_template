@@ -219,13 +219,13 @@ class _NotesHomeState extends State<NotesHome> {
               ),
             ),
 
-            // ─── شرائح التصفية (✅ مُصلَّحة) ───
+            // ─── شرائح التصفية (✅ مُصلَّحة: بدون <Widget>) ───
             SizedBox(
               height: 44,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.symmetric(horizontal: 18),
-                children: <Widget>['All', 'Pinned', 'Work', 'Personal', 'Ideas']
+                children: ['All', 'Pinned', 'Work', 'Personal', 'Ideas']
                     .map((item) {
                   return Padding(
                     padding: const EdgeInsetsDirectional.only(end: 8),
